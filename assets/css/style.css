@@ -565,10 +565,10 @@ Navbar
 }
 
 .navbar-custom .navbar-brand {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Inconsolata", sans-serif;
 	letter-spacing: 0.1em;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 14px;
 	color: #000;
 }
 
@@ -1593,51 +1593,4 @@ Multi-columns-row
 	.multi-columns-row .col-lg-2:nth-child(6n + 7) { clear: left; }
 	.multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
 
-}
-/* -------------------------------------------------------------------
-customized
-------------------------------------------------------------------- */
-.home-header{
-	position: relative;
-	margin:0 30px 30px 0;
-	font-size: 72px;
-	color:#000;
-}
-.col-transparent{
-	padding: 140px 60px;
-}
-.header-bold{
-	font-weight: 900;
-}
-.margin-top{
-	margin:200px 0 0 0;
-}
-
-.portfolio{
-	padding-right:50px;
-	height:250px;
-	color:black;
-	font-size: 14px;
-	font-weight: 400;
-	
-}
-.portfolio .header{
-	font-weight: 600;
-	font-size: 16px;
-
-}
-.portfolio .bar{
-	width:80%;
-	height:4px;
-	background-color: black;
-	margin:15px 0;
-	
-}
-*{
-	list-style:none;
-}
-.portfolio li a:hover {
-	text-decoration: none;
-	background-color: #FFDD00;
-	color:black;
 }
