@@ -1,0 +1,49 @@
+mark {
+  background-color: #E2F3BB;
+}
+
+#about .bio {
+  background-color: #E2F3BB;
+}
+
+#services .service:hover > i.icon {
+  background: #E2F3BB none repeat scroll 0 0;
+  color: #111;
+}
+
+.education .years {
+  background-color: #E2F3BB;
+  color: #555;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+  background: #E2F3BB none repeat scroll 0 0;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #E2F3BB none repeat scroll 0 0;
+  opacity: 1;
+}
+
+#blog h3 a:hover {
+    color: #222;
+    background-color: #E2F3BB;
+}
+
+button.submit:hover, .button.submit:focus, .button.submit:active {
+  background-color: #E2F3BB;
+  color: #333;
+}
+
+.go-totop {
+  background-color: #E2F3BB;
+}
+
+::selection {
+    background: #E2F3BB;
+    /* Safari */
+}
+::-moz-selection {
+    background: #E2F3BB;
+    /* Firefox */
+}

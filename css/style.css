@@ -1,0 +1,1312 @@
+/*
+    Template: Invent - Personal Resume & Portfolio Template
+    Author: Linewp
+    Version: 1.0
+*/
+/* TABLE OF CONTENTS
+
+    1. Basic Document Styles
+    2. Navigation
+    3. Section Titles
+    4. Section Home
+    5. Section About
+    6. Section Services
+    7. Section Portfolio
+    8. Section Resume
+    9. Section Team
+    10. Section Testimonials
+    11. Section Clients
+    12. Section Blog
+    13. Section Contact
+    14. Footer
+    15. Media Queries For Responsive Design
+*/
+/* 1. Basic Document Styles
+-------------------------------------------------*/
+
+body,
+html {
+    font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 0;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 900;
+}
+h4 {
+    text-transform: uppercase;
+}
+h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+}
+a {
+    color: #222;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+}
+li {
+    list-style: outside none none;
+}
+mark {
+    background-color: #FEF7A4;
+    padding: 0.1em;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+ul,
+ol {
+    padding: 0;
+}
+::selection {
+    background: #FEF7A4;
+    /* Safari */
+    
+    color: #333;
+}
+::-moz-selection {
+    background: #FEF7A4;
+    /* Firefox */
+    
+    color: #333;
+}
+/* Preloader */
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #FFFFFF;
+}
+.loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    margin: -30px 0 0 -30px;
+    background: rgba(13, 13, 13, 0.5);
+    -webkit-animation: loader-anim 1.5s infinite;
+    animation: loader-anim 1.5s infinite;
+}
+@-webkit-keyframes loader-anim {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes loader-anim {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+/* 2. Navigation
+-------------------------------------------------*/
+
+#main-menu {
+    padding: 20px;
+    transition: all 0.8s;
+}
+#main-menu.navbar-default {
+    background-color: rgba(248, 248, 248, 0);
+}
+#main-menu a.navbar-brand {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #434242;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+#main-menu a.navbar-brand i {
+    color: #bbb;
+}
+#main-menu.navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #434242;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.on {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+}
+.navbar.navbar-default.navbar-fixed-top {
+    border-bottom: 1px solid transparent;
+}
+.navbar.navbar-default.navbar-fixed-top.on {
+    border-bottom: 1px solid #eee;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #333 !important;
+    background-color: transparent;
+    font-weight: 700;
+}
+.navbar-toggle {
+    border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #FEF7A4;
+    border-color: #FEF7A4;
+    color: #333;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+    background-color: #333;
+}
+/* 3. Section Titles
+-------------------------------------------------*/
+
+.section-title.center {
+    padding: 30px 0;
+    text-align: center;
+}
+.section-title h2,
+.section-title.center h2 {
+    font-weight: 300;
+    color: #030303;
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+.section-title.center .line {
+    border-top: 3px solid #333;
+    height: 10px;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section-title.center p {
+    color: #535353;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/* 4. Section Home
+-------------------------------------------------*/
+
+#home {
+    background: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #434242;
+}
+#home h1 {
+    font-size: 58px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    margin-bottom: 28px;
+}
+#home p.lead {
+    color: #434242;
+    font-size: 18px;
+}
+#home .content hr {
+    background-color: #666;
+    height: 2px;
+    border: 0 none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100px;
+}
+.content {
+    position: relative;
+    padding: 19% 0 15%;
+}
+.content mark {
+    padding: 0;
+    color: inherit;
+}
+/* 5. Section About
+-------------------------------------------------*/
+
+#about {
+    padding: 100px 0;
+}
+#about h3 {
+    display: block;
+    font-size: 23px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 1px 0px;
+    color: #222;
+    font-weight: 400;
+}
+#about .img-about {
+    border: 1px solid #fff;
+    margin-top: 18px;
+    width: 520px;
+}
+#about .bio {
+    background-color: #fef7a4;
+    margin-left: -100px;
+    margin-top: 50px;
+    padding: 14px 31px 33px 35px;
+}
+#about hr {
+    border-color: #333;
+    border-width: 1px;
+    clear: both;
+    float: left;
+    margin: 10px 0;
+    width: 100px;
+}
+#about p.intro {
+    margin: 10px 0 0;
+}
+#about .social {
+    margin-top: 19px;
+    text-align: left;
+}
+#about i {
+    font-size: 16px;
+}
+#about .social li {
+    display: inline-block;
+    padding-right: 14px;
+}
+#about .social li:last-child {
+    padding: 0;
+}
+#about .social a {
+    color: #666;
+    display: block;
+}
+#about .social a {
+    transition: all 0.1s linear 0s;
+}
+#about .social:hover li a {
+    color: #787878;
+}
+#about .social li a:focus, #about .social li a:hover {
+    color: #444;
+}
+#about .skills {
+    margin-top: 35px;
+    padding-right: 30px;
+}
+/* Progress bars */
+
+.skills-item {
+    position: relative;
+    height: 2px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.skills .skills-item .skills-item-progress {
+    position: relative;
+    width: 0;
+    height: 2px;
+    background-color: #030303;
+    transition: 2s;
+}
+.skills .skills-item .skills-item-progress:after {
+    background: none;
+    box-shadow: 0 0 0 5px;
+    opacity: 0.3;
+}
+.skills .skills-item.animated .skills-item-progress {
+    width: 100%;
+}
+.skills-item .counter {
+    position: absolute;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    width: 46px;
+    height: 24px;
+    line-height: 24px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: #030303;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate(50%, -100%);
+    -moz-transform: translate(50%, -100%);
+    -ms-transform: translate(50%, -100%);
+    -o-transform: translate(50%, -100%);
+    transform: translate(50%, -100%);
+}
+.skills-item .count {
+    margin-right: -4px;
+}
+.skills .progress-title {
+    color: #222222;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 33px;
+    text-transform: uppercase;
+}
+/* 6. Section Services
+-------------------------------------------------*/
+
+#services {
+    padding: 90px 0 80px;
+    background-color: #FBFBFB;
+}
+.space {
+    margin-top: 40px;
+}
+#services i.icon {
+    border: 0 none;
+    border-radius: 10%;
+    color: #434242 !important;
+    font-size: 38px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    float: left;;
+}
+#services .service {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#services .service p {
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+#services .service:hover>i.icon {
+    background: #FEF7A4;
+    color: #111;
+}
+#services h4 {
+    color: #030303;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 10px 0 6px 90px;
+    line-height: 1.8;
+}
+/* 7. Section Portfolio
+-------------------------------------------------*/
+
+#works {
+    padding: 100px 0;
+}
+.categories {
+    padding: 10px 0 25px;
+}
+ul.cat li {
+    display: inline-block;
+}
+#works li.pull-right {
+    margin-top: 10px;
+}
+ol.type li {
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+ol.type li:after {
+    content: ' / ';
+    margin-left: 20px;
+    color: #BDC3BD;
+}
+ol.type li:last-child:after {
+    content: '';
+}
+ol.type li a {
+    color: #666;
+}
+ol.type li a.active {
+    font-weight: 700;
+}
+.isotope-item {
+    z-index: 2
+}
+.isotope-hidden.isotope-item {
+    z-index: 1
+}
+.isotope,
+.isotope .isotope-item {
+    /* change duration value to whatever you like */
+    
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope-item {
+    margin-right: -1px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.isotope {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+.portfolio-item {
+    margin-bottom: 30px;
+}
+.portfolio-item .hover-bg {
+    overflow: hidden;
+    position: relative;
+}
+.hover-bg .hover-text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #444;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15% 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+    opacity: 0;
+    letter-spacing: 2px;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: all 0.4s;
+}
+.hover-bg:hover .hover-text>h4 {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.hover-bg .hover-text>i {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: all 0.4s;
+}
+.hover-bg:hover .hover-text>i {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.hover-bg:hover .hover-text {
+    opacity: 1;
+}
+#works i.fa {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    color: #555;
+}
+.hover-bg .line {
+    background: #444 none repeat scroll 0 0;
+    color: black;
+    height: 2px;
+    text-align: center;
+    width: 66px;
+}
+.hover-bg .hover-text>hr {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+.hover-bg:hover .hover-text>hr {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+/* 8. Section Resume
+-------------------------------------------------*/
+
+#resume {
+    padding: 100px 0;
+    background-color: #FBFBFB;
+}
+#resume i.icon {
+    border: 0 none;
+    color: #434242 !important;
+    font-size: 40px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding: 26px 8px;
+    transition: all 0.5s ease 0s;
+    width: 80px;
+}
+.education article {
+    padding: 0 0 60px;
+}
+.education .holder {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 95px;
+    overflow: hidden;
+    padding: 0 0 24px;
+}
+.education h3 {
+    font-size: 19px;
+    font-weight: normal;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444;
+}
+.education h2 {
+    color: #030303;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+.education .info-line {
+    margin: -8px 0 10px;
+}
+.education .info-line span {
+    font-weight: 500;
+    margin: 0 4px 0 0;
+}
+.education .years {
+    background-color: #fef7a4;
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 29px;
+    margin: 0 0 30px;
+    padding: 0 11px;
+}
+.education .divider {
+    background: #cccccc none repeat scroll 0 0;
+    display: block;
+    height: 1px;
+    margin: 0 0 21px;
+}
+/* 9. Section Team
+-------------------------------------------------*/
+
+#team {
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #555;
+}
+#team .overlay {
+    background: #fff;
+    height: auto;
+    background-attachment: fixed;
+    padding: 100px 0 20px;
+}
+.section-title.center {
+    padding: 30px 0;
+    text-align: center;
+}
+.section-title h2,
+.section-title.center h2 {
+    font-weight: 300;
+    color: #030303;
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+.section-title.center .line {
+    border-top: 3px solid #555;
+    height: 10px;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section-title.center hr {
+    border-top: 4px solid rgba(252, 172, 69, 0.34);
+    width: 40px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    left: 17%;
+}
+.section-title.center p {
+    color: #535353;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#team {
+    margin: 0 auto
+}
+#team .item {
+    padding: 0;
+    margin: 15px;
+    color: #FFF;
+    text-align: center;
+}
+.caption > h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;;
+}
+#team .thumbnail {
+    background: transparent;
+    border: 0;
+}
+#team .thumbnail .caption {
+    padding: 9px;
+    color: #555;
+}
+#team .thumbnail .caption p {
+    color: #888;
+}
+.social {
+    height: 20px;
+}
+.social:before {
+    text-align: center;
+    display: inline-block;
+    ;
+    margin-top: 10px;
+}
+.social:after {
+    text-align: center;
+    display: inline-block;
+    ;
+    margin-top: 10px;
+}
+.social .icon {
+    float: left;
+    opacity: 0;
+}
+.social .facebook {
+    left: 10%;
+}
+.social .twitter {
+    left: 10%;
+}
+.social .linkedin {
+    left: 10%;
+}
+.item .thumbnail:hover .social .icon a {
+    background-color: #fff;
+    z-index: 10;
+}
+.item .thumbnail:hover .social .facebook {
+    animation: f 0.4s;
+    top: 20%;
+    position: absolute;
+    opacity: 1;
+}
+@keyframes f {
+    from {
+        top: 0%;
+        opacity: 0;
+    }
+    to {
+        top: 20%;
+        opacity: 1;
+    }
+}
+.item .thumbnail:hover .social .twitter {
+    animation: t 0.7s;
+    top: 30%;
+    position: absolute;
+    opacity: 1;
+}
+@keyframes t {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 30%;
+        opacity: 1;
+    }
+}
+.item .thumbnail:hover .social .linkedin {
+    animation: i 0.9s;
+    top: 40%;
+    position: absolute;
+    opacity: 1;
+}
+@keyframes i {
+    from {
+        top: 0%;
+        opacity: 0;
+    }
+    to {
+        top: 40%;
+        opacity: 1;
+    }
+}
+.social .icon a {
+    border: 0 none;
+    border-radius: 4px;
+    color: #000;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    background-color: #fff;
+}
+#team-about {
+    padding: 10px 0 100px;
+}
+#team-about h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    color: #222;
+    font-weight: 400;
+}
+#team-about hr {
+    border-color: #333;
+    border-width: 3px;
+    clear: both;
+    float: left;
+    width: 60px;
+}
+#team-about p.intro {
+    margin: 8px 0 0;
+}
+#team-about .skills {
+    margin-top: 10px;
+}
+/* 10. Section Testimonials
+-------------------------------------------------*/
+
+#testimonials {
+    background: url(../img/testimonials.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+#testimonials .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 80px 0;
+    background-attachment: fixed;
+}
+#testimonials .section-title.center h2 {
+    color: #eee;
+}
+#testimonials mark {
+    padding: 0.01em;
+}
+#testimonial {
+    padding: 2px 0 30px;
+}
+#testimonial .item {
+    background-image: url("../img/blockquote.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#testimonial .item h5 {
+    font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #CBCBCB;
+    text-transform: none;
+    line-height: 32px;
+    font-style: italic;
+}
+#testimonial .item p {
+    font-weight: 400;
+    margin: 20px 0;
+    color: #999;
+}
+#testimonial .item img {
+    border-radius: 50%;
+    max-width: 90px;
+    margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    opacity: 1;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 20px;
+    border-radius: 0;
+    background: #FFFFFF;
+    transition: all 0.5s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    opacity: 1;
+    background: #E6E600;
+}
+.owl-theme .owl-controls .owl-page.active span {
+    background: #FAF476;
+}
+/* 11. Section Clients
+-------------------------------------------------*/
+
+#clients {
+    background-color: #fff;
+    color: #ffffff;
+    padding: 100px 0;
+}
+#clients .overlay {
+    background: #fff;
+    height: auto;
+    background-attachment: fixed;
+}
+.clients-logo ul {
+    display: inline-block;
+    width: 100%;
+}
+.clients-logo ul li {
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+.clients-logo ul li:nth-child(3) {
+    border-right: medium none;
+}
+.clients-logo ul li:nth-child(4) {
+    border-bottom: medium none;
+}
+.clients-logo ul li:nth-child(5) {
+    border-bottom: medium none;
+}
+.clients-logo ul li:nth-child(6) {
+    border-bottom: medium none;
+    border-right: medium none;
+}
+/* 12. Section Blog
+-------------------------------------------------*/
+
+#blog {
+    padding: 100px 0 80px;
+    background-color: #FBFBFB;
+}
+#blog .blog {
+    margin-bottom: 40px;
+}
+.space {
+    margin-top: 40px;
+}
+#blog h3 {
+    color: #030303;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 27px 0 0;
+    line-height: 1.8;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#blog h4 {
+    font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #999;
+    font-size: 13px;
+    letter-spacing: 0px;
+    margin: 5px 0 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#blog .post-img {
+    width: 100%;
+}
+#blog .blog span {
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+    border-radius: 1px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    height: 60px;
+    margin: 20px;
+    padding: 4px;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    width: 50px;
+    opacity: 0.8;
+}
+#blog h3 a:hover {
+    color: #222;
+    background-color: #fef7a4;
+}
+#blog .blog a.read-more {
+    color: #999;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+#blog .blog a.read-more:hover {
+    color: #555;
+}
+/* 13. Section Contact
+-------------------------------------------------*/
+
+#Contact {
+    background: #fff;
+    padding: 100px 0 0px 0;
+}
+.contactForm {
+    margin: 0 0 90px 0;
+}
+.contactLeft {
+    margin-top: 60px;
+}
+.contactRight {
+    padding-left: 28px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.contacDetails .icon {
+    color: #030303;
+    float: left;
+    font-size: 25px;
+    height: 65px;
+    padding: 14px 8px;
+    width: 65px;
+}
+.contacDetails {
+    margin: 36px 0 10px;
+}
+.contacDetails h3 {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    color: #444;
+}
+.contacDetails p {
+    font-size: 14px;
+}
+section#Contact .form-group {
+    margin-bottom: 26px;
+}
+section#Contact .form-group input,
+section#Contact .form-group textarea {
+    background-color: transparent;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    color: #555;
+    font-size: 12px;
+    padding: 15px;
+}
+section#Contact .form-group input.form-control {
+    height: auto;
+}
+section#Contact .form-control:focus {
+    border-color: #777;
+    box-shadow: none;
+}
+section#Contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #999;
+}
+section#Contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #999;
+}
+section#Contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #999;
+}
+section#Contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #999;
+}
+section#Contact .text-danger {
+    color: #F46E6F;
+}
+section#Contact ul {
+    padding-left: 14px;
+}
+#map {
+    height: 400px;
+}
+#go-to  {
+    display: block;
+    position: relative !important;
+    z-index: 99;
+}
+.go-totop {
+    background-color: #FAF584;
+    border-radius: 5px;
+    bottom: auto;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    height: 72px;
+    left: 0;
+    line-height: 72px;
+    margin: -37px auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: auto;
+    width: 47px;
+    z-index: 100;
+}
+.go-totop a {
+    display: block;
+}
+
+/* ====GENERAL FORM STYLES==== */
+
+input,
+textarea,
+select {
+    color: #222;
+    background: transparent;
+    vertical-align: top;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #03c9a9;
+    outline: none;
+    position: relative;
+    z-index: 5;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    border: 1px solid #03c9a9;
+}
+button.submit {
+    background-color: #030303;
+    border: 1px solid transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    padding: 11px 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out 0s;
+    width: auto;
+}
+button.submit:hover,
+.button.submit:focus,
+.button.submit:active {
+    background-color: #FAF476;
+    color: #333;
+}
+/* 14. Footer
+-------------------------------------------------*/
+
+#footer {
+    background: #131313;
+    color: #A7A7A7;
+    padding: 90px 0 80px 0;
+    text-align: center;
+}
+ul.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+#footer p {
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+#footer i.fa {
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
+    padding: 4px 5px;
+    color: #A7A7A7;
+    transition: all 0.5s;
+}
+#footer i.fa:hover {
+    color: #888;
+}
+/* 15. Media Queries For Responsive Design
+-------------------------------------------------*/
+
+@media (max-width: 992px) {
+    .content {
+        padding: 19% 0 20%;
+    }
+    #home h1 {
+        font-size: 55px;
+    }
+    #about .bio {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .content {
+        padding: 24% 0 25%;
+    }
+    #home h1 {
+        font-size: 50px;
+    }
+    #about .bio {
+        margin-top: 30px;
+    }
+    #about hr {
+        float: none;
+    }
+    .col-md-4.col-sm-6.photo {
+        text-align: center;
+    }
+    #blog .blog {
+        margin-bottom: 60px;
+    }
+    .education article {
+        padding: 30px 0 30px;
+    }
+    #about .bio {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 603px) {
+    #tf-menu.navbar-default {
+        background-color: rgba(0, 0, 0, 0.79);
+    }
+    #tf-works li.pull-right,
+    #tf-works li.pull-left {
+        margin-top: 10px;
+        float: none !important;
+        text-align: center;
+        display: block;
+    }
+    label {
+        float: none !important
+    }
+    .pull-left.fnav,
+    .pull-right.fnav {
+        float: none !important;
+        text-align: center;
+    }
+    .portfolio-item {
+        width: 450px;
+    }
+    .hover-bg .hover-text {
+        padding: 12% 10%;
+    }
+    #home h1 {
+        font-size: 35px;
+    }
+    #home p.lead {
+        font-size: 15px;
+    }
+    #about .bio {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 360px) {
+    .hover-bg .hover-text {
+        padding: 12% 10%;
+    }
+    .portfolio-item {
+        width: 300px;
+    }
+}
