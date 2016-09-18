@@ -818,10 +818,11 @@ ol.type li a.active {
     width: 30px;
     background-color: #fff;
 }
-#team-about {
-    padding: 10px 0 100px;
+#achievement-hunter {
+    padding: 100px 0 100px;
+    background-color: #FBFBFB
 }
-#team-about h3 {
+#achievement-hunter  h3 {
     font-size: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -829,17 +830,17 @@ ol.type li a.active {
     color: #222;
     font-weight: 400;
 }
-#team-about hr {
+#achievement-hunter  hr {
     border-color: #333;
     border-width: 3px;
     clear: both;
     float: left;
     width: 60px;
 }
-#team-about p.intro {
+#achievement-hunter  p.intro {
     margin: 8px 0 0;
 }
-#team-about .skills {
+#achievement-hunter  .skills {
     margin-top: 10px;
 }
 /* 10. Section Testimonials
@@ -1175,16 +1176,16 @@ select:focus {
     border: 1px solid #03c9a9;
 }
 button.submit {
-    background-color: #030303;
-    border: 1px solid transparent;
-    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #222;
     cursor: pointer;
     font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 3px;
-    margin: 20px 0;
-    padding: 11px 20px;
+    margin: 40px 0;
+    padding: 8px 20px;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -1195,6 +1196,7 @@ button.submit:hover,
 .button.submit:focus,
 .button.submit:active {
     background-color: #FAF476;
+    border: 1px solid #FAF476;
     color: #333;
 }
 /* 14. Footer
