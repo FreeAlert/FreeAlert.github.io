@@ -819,10 +819,15 @@ ol.type li a.active {
     background-color: #fff;
 }
 #achievement-hunter {
-    padding: 100px 0 100px;
-    background-color: #FBFBFB
+    background-color:#fff;
 }
-#achievement-hunter  h3 {
+#xbox-club{
+    background-color:#FBFBFB;
+}
+.project {
+    padding: 100px 0 100px;
+}
+.project h3 {
     font-size: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -830,17 +835,17 @@ ol.type li a.active {
     color: #222;
     font-weight: 400;
 }
-#achievement-hunter  hr {
+.project  hr {
     border-color: #333;
     border-width: 3px;
     clear: both;
     float: left;
     width: 60px;
 }
-#achievement-hunter  p.intro {
+.project p.intro {
     margin: 8px 0 0;
 }
-#achievement-hunter  .skills {
+.project  .skills {
     margin-top: 10px;
 }
 /* 10. Section Testimonials
@@ -1195,7 +1200,7 @@ button.submit {
 button.submit:hover,
 .button.submit:focus,
 .button.submit:active {
-    background-color: #FAF476;
+    background-color: transparent;
     border: 1px solid #FAF476;
     color: #333;
 }
