@@ -824,6 +824,19 @@ ol.type li a.active {
 #xbox-club{
     background-color:#FBFBFB;
 }
+
+#xboxprojects {
+    background-color:#FBFBFB;
+}
+#traaash{
+    background-color:#Fff;
+}
+#pg {
+    background-color:#FBFBFB;
+}
+#dreamseeds{
+    background-color:#Fff;
+}
 .project {
     padding: 100px 0 100px;
 }
@@ -1013,13 +1026,13 @@ ol.type li a.active {
     color: #222;
     background-color: #fef7a4;
 }
-#blog .blog a.read-more {
-    color: #999;
-    font-size: 14px;
+a.read-more {
+    color: #777;
+    font-size: 1px;
     text-transform: uppercase;
-    letter-spacing: 0px;
+  
 }
-#blog .blog a.read-more:hover {
+a.read-more:hover {
     color: #555;
 }
 /* 13. Section Contact
