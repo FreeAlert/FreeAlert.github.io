@@ -1,0 +1,33 @@
+
+.background-light{
+    background-color:#fbfbfb;
+}
+.fixed-height{
+    height:150px;
+}
+.social-list > li{
+	font-size: 12px;
+}
+
+.social-list > li a {
+	font-size: 20px;
+}
+
+.section-title h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    color: #222;
+    font-weight: 800;
+	font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.p-b-30{
+    padding-bottom: 30px;
+}
+.p-b-20{
+    padding-bottom: 20px;
+}
+.p-t-20{
+    padding-top: 20px;
+}
