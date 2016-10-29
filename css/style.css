@@ -1212,9 +1212,9 @@ button.submit {
 button.submit:hover,
 .button.submit:focus,
 .button.submit:active {
-    background-color: transparent;
-    border: 1px solid #FAF476;
-    color: #333;
+    background-color: #131313;
+    border: 1px solid #131313;
+    color: #fff;
 }
 /* 14. Footer
 -------------------------------------------------*/
