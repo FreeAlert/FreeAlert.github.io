@@ -38,3 +38,15 @@
 
      box-shadow:2px 2px 10px 3px #ebebeb;
 }
+
+.module-project,
+{
+	position: relative;
+	padding: 140px 0;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}

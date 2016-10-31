@@ -678,7 +678,16 @@ Home Section
 	letter-spacing: 0.2em;
 	font-size: 36px;
 }
-
+.hs-caption{
+    position: absolute;
+	width:100%;
+    bottom:0px;
+    padding-top:50px;
+	padding-bottom:50px;
+	padding-left:15.6%;
+	padding-right:15.6%;
+    background-color: white;
+}
 /* Video */
 
 .video-controls-box {
