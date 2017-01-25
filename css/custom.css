@@ -2,6 +2,11 @@
 .background-light{
     background-color:#fbfbfb;
 }
+
+.background-black{
+    background-color:#000000;
+}
+
 .fixed-height{
     height:150px;
 }
