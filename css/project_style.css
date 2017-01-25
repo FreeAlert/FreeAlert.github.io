@@ -22,8 +22,8 @@ html {
 
 body {
 	background: #fff;
-	font: 400 15px "Open Sans", Verdana, sans-serif;
-	line-height: 26px;
+	font: 400 16px "Open Sans", Verdana, sans-serif;
+	line-height: 30px;
 	color:#222;
 	-webkit-font-smoothing: antialiased;
 }
@@ -753,7 +753,7 @@ Sections
 
 .module-subtitle {
 	margin-bottom: 70px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .module-title + .module-subtitle {
