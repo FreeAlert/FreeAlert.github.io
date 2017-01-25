@@ -26,12 +26,11 @@
 
 body,
 html {
-    font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Verdana, sans-serif;
     color: #777;
+    font-weight: lighter;
     line-height: 26px;
-    font-weight: 400;
     font-size: 14px;
-    letter-spacing: -0.2px;
 }
 h1,
 h2,
