@@ -3,8 +3,8 @@
     background-color:#fbfbfb;
 }
 
-.background-black{
-    background-color:#000000;
+.background-darker{
+    background-color:#f5f5f5;
 }
 
 .fixed-height{
@@ -40,9 +40,11 @@
     padding-top: 50px;
 }
 .shadow{
-
-     box-shadow:2px 2px 10px 3px #ebebeb;
+  -webkit-box-shadow: 8px 8px 6px -6px #6b6b6b;
+     -moz-box-shadow: 8px 8px 6px -6px #6b6b6b;
+          box-shadow: 8px 8px 6px -6px #6b6b6b;
 }
+
 
 .module-project,
 {
@@ -54,4 +56,11 @@
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
+}
+.m-b-30{
+    margin-bottom:70px;
+}
+
+.m-b-10{
+    margin-bottom:30px;
 }
