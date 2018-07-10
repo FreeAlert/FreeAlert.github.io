@@ -68,6 +68,7 @@ a:focus {
     outline: none;
     color: #333;
 }
+  
 li {
     list-style: outside none none;
 }

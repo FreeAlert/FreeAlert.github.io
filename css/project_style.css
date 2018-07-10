@@ -478,7 +478,7 @@ a {
 
 a:hover, a:focus {
 	text-decoration: none;
-	color: #fff;
+	color: #222;
 	outline: 0;
 }
 
@@ -1356,23 +1356,23 @@ Preloader
 
 @-webkit-keyframes load {
 	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
+	 -webkit-transform: scale(0);
 	}
 	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
+		 opacity: 0;
+        -webkit-transform: scale(1);
 	}
 }
 
 @keyframes load {
 	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
+		-webkit-transform: scale(0);
+		transform: scale(0);
 	}
 	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
+		 opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
 	}
 }
 
