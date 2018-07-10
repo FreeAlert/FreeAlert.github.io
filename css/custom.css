@@ -24,7 +24,7 @@
     text-transform: uppercase;
     padding: 5px 0px;
     color: #222;
-    font-weight: 800;
+    font-weight: 500;
 	font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .p-b-30{
@@ -32,6 +32,9 @@
 }
 .p-b-20{
     padding-bottom: 20px;
+}
+.p-b-50{
+    padding-bottom: 50px;
 }
 .p-t-20{
     padding-top: 20px;

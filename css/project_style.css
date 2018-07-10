@@ -22,9 +22,10 @@ html {
 
 body {
 	background: #fff;
-	font: 400 16px "Open Sans", Verdana, sans-serif;
-	line-height: 30px;
-	color:#222;
+	font: 14px "Open Sans", Verdana, sans-serif;
+	line-height: 28px;
+	font-weight: lighter;
+	color:#777;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -495,7 +496,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ol, ul, blockquote {
-	margin: 0 0 20px;
+	margin: 0 0 0 0px;
 }
 
 blockquote {
