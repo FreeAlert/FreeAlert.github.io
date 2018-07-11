@@ -250,13 +250,15 @@ But where shall we start? At the very beginning, we have these questions:<br></b
 		</div>
 
 		<div>
-				The exisiting content creation tool has a series of user experience issues. Here are some examples how I addressed problems. <br></br>
+				The exisiting content creation tool has a series of user experience issues. Here are some examples about my thinking process and how I addressed problems. <br></br>
 				<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Example 1</p>
-				<li>The app has very messy navigations, I abstracted them based on the different level of controls they manage (global/program/contextual) and did a regrouping, later I verified the new navigation by testing them with new users and they can navigate the site and complete tasks successfully.</li>
+				<li>The app has very messy navigations, I abstracted them based on the different level of controls they manage (global/program/contextual) and regrouped them, later I verified the new navigation by testing them with new users and they can navigate the site and complete tasks successfully.</li>
 				<img src="img/udacity/navigation.png">
 				</ul>
 				<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Example 2</p>
-				<li>Content creators want to undo unexpected edits, but all the programs at Udacity is a tree structure. If we simply follow the google doc history patten, then when a user recovers a history of a lesson, all the nested concepts will be affected. How can a user recover a deleted concept without affecting the whole lesson? </li>
+				<li>Content creators want to undo unexpected edits, but all the programs at Udacity is in a tree structure. If we simply follow the google doc history patten, then when a user accidently deletes a lesson from a course, and recovers by just rolling back the history of the whole course, then all the nested lessons that has been edited will lose their changes. How can a user recover a deleted page without affecting its "siblings"? I got inspirations by looking at many creation tools. And here is the solution:
+					The history panel only shows history of the page only. Rolling back history only changes the version of the page. And using trash can concept to restore a “page” without affecting its “sibling” pages. It will be restored back under its original parent page.
+				</li>
 				<img src="img/udacity/history.png">
 				</ul>
 			</div>
