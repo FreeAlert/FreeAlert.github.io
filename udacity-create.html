@@ -93,7 +93,7 @@
 		<section class="module-small">
 			<div class="container">
 				<div class="section-title center">
-					<h3>01. Background: why do we need to scale?</h3>
+					<h3>01. Background</h3>
 					<div class="line">
 					</div>
 				</div>
@@ -101,8 +101,9 @@
 
 					<div class="col-sm-12 col-md-12">
 					 Since September 2017, I have been collaborating with remote Creative Director <a href="https://antoniocosta.eu/" style="text-decoration: underline; color:#777">Antonio Costa</a> to lead the company’s most ambitious project to scale Udacity’s online learning platform. 
-					 As context, Udacity’s paid degree programs have been wildly popular - growing from 15K to 50K purchases in less than a year - and the old process for launching new degree programs couldn’t keep up with demand. 
-					 How does Udacity best scale its entire content production process? That’s a huge problem that we broke down into 3 main questions:
+					 As context, Udacity’s paid Nanodegree programs have been wildly popular - growing from 15K to 50K purchasing students in less than a year - and the old process for launching new nanodegree programs (hire full time content developers) couldn’t keep up with demand. 
+					 How does Udacity best scale its entire content production process and open its platform to external creators? That’s a huge question. <strong>One principle we hold is that " We are the platform's first customers.
+					 Udacity can never turn itself into a platform unless it is itself built from the ground up using the same APIs that it would offer to external creators. "</strong> So we started by identifying problems internally first and broke down the big question into 3 main questions:
 					 <br></br>
 <ul><li>1. What is the current process for launching a nanodegree program?</li>
 <li> 2. What are the pain points in that process?</li>
@@ -118,13 +119,20 @@
 
 			<div class="container">
 				<div class="section-title center">
-					<h3>02. Early Stage: User Research</h3>
+					<h3>02. User Research</h3>
 					<div class="line">
 					</div>
 				</div>
 				<div>
-						I initiated the user research by interviewing 4 content developers and 2 Nanodegree product leads. We covered topics around motivation, process, collaboration and challenges. Later I summarized all the key words they said and synthesized 14 main themes, illustrated the stakeholder and journey maps
-						One of the major challenges is no single source of truth and the duplication of work as users have to go to multiple tools to have their work done, which led to our following design directions.
+					We didn't have user researchers, so I initiated the whole user research by interviewing 4 internal content developers, 2 nanodegree product leads, 3 program managers about program goals, processes, collaboration models, and challenges. I summarized their thoughts into 14 main themes, a stakeholder map, and a map of the program development journey. 
+					Based on the research, the whole picture of launching a program became more crystal clear to me. Basically there are 3 main stakeholders in the full journey of lauching a nanodegree program and their roles are as follows:
+					<br></br>
+					<ul>
+					<li><strong>Content Creators</strong>: create content</li>
+					<li><strong>Product Leads</strong>: define the product strategies and prices </li>
+					<li><strong>Program Managers</strong>: manage detailed tasks and cohorts (a group of students start and end a program at the same time) </li>
+				    </ul>
+
 						<div class="col-sm-12">
 
 							<div class="post-images-slider">
@@ -145,9 +153,24 @@
 
 		<section class="module-small">
 
+				<div class="container">
+					<div class="section-title center">
+						<h3>03. The major pain points</h3>
+						<div class="line">
+						</div>
+					</div>
+					<div>
+						Based on the user research, we identified the major pain points for different stakeholders
+						<img src="img/udacity/pain_points.png">
+					</div>
+				</div>
+		</section>
+
+		<section class="module-small background-light">
+
 			<div class="container">
 				<div class="section-title center">
-					<h3>03. Early Stage: Design directions</h3>
+					<h3>04. Design directions</h3>
 					<div class="line">
 					</div>
 				</div>
@@ -157,84 +180,105 @@
 			</div>
 		</section>
 
-		<section class="module-small background-light">
+		<section class="module-small">
 
 			<div class="container">
 				<div class="section-title center">
-					<h3>04. Early Stage: Design explorations </h3>
+					<h3>05. Design explorations </h3>
 					<div class="line">
 					</div>
 				</div>
-					Based on the design directions, we explored a bunch of ideas for 3 main uses cases: new, remix and edit. Below are some of the ideas.
+					Based on the first 2 design directions, we explored a bunch of ideas. For the content creation side, the ideas are created based on 2 main uses cases: new and edit. Below are some of the ideas.
 					<img src="img/udacity/concepts.png">
 					<div class=" p-b-50">
-						Then I tested these concepts with our internal content creators, the idea got them really excited about is one single tool that enables them to create/edit/comment content. We then designed more details of this concept that combines the classroom (students facing) and the content composer tool (creators facing) in <strong> one single unified environment</strong>, to reduce the friction among consuming / previewing /creating content and made the product proposal. 
+							I then tested these concepts with our internal content creator users. They were very excited about having a single tool for creating, editing, and commenting on content. We followed that feedback to flesh out the design details for this solution that combines the classroom section of the platform (which is student-facing) with the content composer tools section (which is creator-facing) into one unified environment. We believed this would greatly reduce the friction that content creators experience when they consume, preview, and create content.
 					</div>
 					<div class="row">
-						<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="col-sm-12 col-md-6 col-lg-6 p-b-50">
 							<img src="img/udacity/lesson-create-concept.gif">
 						</div>
-						<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="col-sm-12 col-md-6 col-lg-6 p-b-50">
 							<img src="img/udacity/create-edit-quiz.gif">
 						</div>
 					</div>
-
+				   Based on the third design direction, we mapped out a new defined pipeline of tools based on each major role's tasks. This requires us to build a lot new services and makes sure that all the data flows automatically through this cascading workflow.
+				   <img src="img/udacity/pipeline.png">
 			</div>
 		</section>
-		<section class="module-small">
+		<section class="module-small background-light">
 			
 						<div class="container">
 							<div class="section-title center">
-								<h3>05. Direction change: this is a startup...</h3>
+								<h3>06. Which design exploration should we invest?</h3>
 								<div class="line">
 								</div>
 							</div>
-							At very beginning, we put secondary users like product leads and PMs aside, and solely focus on content creators
-							who are primary users as the whole company’s OKR back then is to have 50 external creators building content with us in 2018.
-							 However, the OKR changed to 5 successful built programs due to the company’s growth situation and limited budget. 
-							And we also realized that we can never scale successfully if we don’t fix internal problems first. 
-							 Building a new unified platform for content creation is really good for user experience, but it is too costly and won’t have tremendous impact at this stage of the project. 
+							 Building a new unified WYSIWYG platform for content creation is really good for user experience, but it is too costly for a startup like Udacity with limited budget and engineering resources. It won’t have tremendous impact at this stage of the project when we are still defining the right workflows and don't have lots external content creators get onboard. 
+							 So we decided to go with the third design direction: <strong>Create new apps for product packaging and cohort management in the new cascading workflow and improve the existing content composer app's usability.  </strong> 
 							<br></br>
-							So we expanded our users to product leads and PMs and relooked at the journey map and identified what the problems we need to solve right now. We focus on clarifying the roles and authorizations of the tools and build a stable infrastructure that would allow us to scale freely in the near future.
-			                <img src="img/udacity/pipeline.png">
+							
 							</div>
 			
 			
 		</section>
 
-
-
+		<section class="module-small">
+			
+				<div class="container">
+					<div class="section-title center">
+						<h3>07. Case Study:Content Composer App</h3>
+						<div class="line">
+						</div>
+					</div>
+			
+					<div>
+							As we focus less on the content composer app, the major goal is to make the existing one more user friendly and incidents-free. Here are some of the problems and solutions I identified and implemented. <br></br>
+							<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Example 1</p>
+							<li>The app had a very messy navigation structure. I abstracted the app’s structure based on the different levels of controls it managed (global/program/contextual) and regrouped them, later verifying the new navigation by testing them with new users who were able to easily navigate the site and complete tasks.
+								</li>
+							<img src="img/udacity/navigation.png">
+							</ul>
+							<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Example 2</p>
+							<li>Content creators want to undo unexpected edits, but all the programs at Udacity is in a tree structure. If we simply follow the google doc history patten, then when a user accidently deletes a lesson from a course, and recovers by just rolling back the history of the whole course, then all the nested lessons that has been edited will lose their changes. So the problem was: how can a user recover a deleted page without affecting sibling content? I reviewed lots of other creation tools to help me create this solution: Isolate the edit history page to only show the actions for that one page. That way, when a user reverts a change, his/her action only changes the version of that page. Similarly, the user can select “trash” to restore a page without affecting sibling pages. The page would be restored to its original state, under its original parent page.
+							</li>
+							<img src="img/udacity/history.png">
+							</ul>
+						</div>
+			
+			
+			</section>
 
 		<section class="module-small background-light">
 			
 			<div class="container">
 				<div class="section-title center">
-					<h3>06. Case Study:Cohort Manager App</h3>
+					<h3>08. Case Study:Cohort Manager App</h3>
 					<div class="line">
 					</div>
 				</div>
 
 				<div>
-						This is a brand new app I designed to improve program managers' work efficiency and reduce incidents caused by schedules. 	With the company's programs switching to cohort based structure, we are facing the following challenges
+						This is a brand new app I designed to improve program managers' work efficiency and reduce incidents caused by schedules. 
 						<br></br>
-						<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Problems</p>
-							<li>1. No overview of the whole schedule of a cohort and PMs have to calculate the dates themsevles in the spreadsheets. </li>
-							<li>2. The schedule of a cohort is affected by data from multiple tools, there is no single source of truth. </li>
-							<li>3. The creation is very manual and sometimes requires a PM to directly write into a database.</li>
+						<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Main tasks</p>
+							<li>1. PMs can easily create terms and cohorts without manually copying information from Content Composer App</li>
+							<li>2. PMs can edit the whole cohort schedules (including project deadlines) in the app without dependencies from Content Composer App </li>
+							<li>3. PMs can easily find and manage related cohorts.</li>
+							<li>4. PMs and Other Users can add/remove students from cohorts</li>
 						</ul>
 						<br></br>
 						<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Iteration 1 - Cohort Landing Page</p>
-						<li> I switched from a "too smart" landing page to a simplied version after conducting user testing. Focus more on the “search” functionality and make information less crowded by identifying primary/secondary data of a cohort. </li>
+						<li>After conducting user testing, I revised the landing page from a complicated structure to a simplified version by emphasizing the “search” functionality to reduce information overload. I was able to do this by identifying primary/secondary data for a cohort.</li>
 						<img src="img/udacity/landing.png">
 						</ul>
 						<br></br>
 						<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Iteration 2 - Cohort Scheduling Page</p>
-						<li>I explored different ways of displaying the relationship between durations and important due dates. A visual duration graph got the final win because it is simple and straightforward.</li>
+						<li>I explored different ways of displaying the relationship between cohort durations and important due dates. I decided displaying a visual duration graph would be best after collecting feedbacks from PMs. It was the simplest, most elegant solution. </li>
 						<img src="img/udacity/scheduling.png">
 						</ul>
 						<br></br>
 						<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Reusable UI components</p>
-							<li> In order to ship tools as quickly as possible and reduce front-end cost, we tried to create and use more sharable UI components across all app pages and all internal tools </li>
+							<li> In order to ship tools as quickly as possible and reduce front-end cost, we tried to create and use more shareable UI components across all app pages and internal tools</li>
 							<img src="img/udacity/reusable.png">
 							</ul>
 						<br></br>
@@ -247,37 +291,12 @@
 
 </section>
 
-<section class="module-small">
 			
-	<div class="container">
-		<div class="section-title center">
-			<h3>07. Case Study:Content Composer App</h3>
-			<div class="line">
-			</div>
-		</div>
-
-		<div>
-				The exisiting content creation tool has a series of user experience issues. Here are some examples about my thinking process and how I addressed problems. <br></br>
-				<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Example 1</p>
-				<li>The app has very messy navigations, I abstracted them based on the different level of controls they manage (global/program/contextual) and regrouped them, later I verified the new navigation by testing them with new users and they can navigate the site and complete tasks successfully.</li>
-				<img src="img/udacity/navigation.png">
-				</ul>
-				<ul><p style="color:#222;font-family:Abel; font-size: 18px; text-transform: uppercase">Example 2</p>
-				<li>Content creators want to undo unexpected edits, but all the programs at Udacity is in a tree structure. If we simply follow the google doc history patten, then when a user accidently deletes a lesson from a course, and recovers by just rolling back the history of the whole course, then all the nested lessons that has been edited will lose their changes. How can a user recover a deleted page without affecting its "siblings"? I got inspirations by looking at many creation tools. And here is the solution:
-					The history panel only shows history of the page only. Rolling back history only changes the version of the page. And using trash can concept to restore a “page” without affecting its “sibling” pages. It will be restored back under its original parent page.
-				</li>
-				<img src="img/udacity/history.png">
-				</ul>
-			</div>
-
-
-</section>
-			
-        <section class="module-small background-light">
+        <section class="module-small">
 
             <div class="container">
                 <div class="section-title center">
-                    <h3>8.Reflection: Services should represent both software and organizational structures</h3>
+                    <h3>09.Reflection</h3>
                     <div class="line">
 					</div>
 				</div>
@@ -300,7 +319,7 @@
 
 
 		<!-- PAGINATION -->
-		<section class="module-small p-t-0 background-light">
+		<section class="module-small p-t-0">
 
 			<div class="container">
 
@@ -353,7 +372,7 @@
 		<script src="js/gmaps.js"></script>
 		<script src="js/isotope.pkgd.min.js"></script>
 		<script src="js/imagesloaded.pkgd.js"></script>
-		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/jquery.fitvids.js"></script>
 		<script src="js/smoothscroll.js"></script>
