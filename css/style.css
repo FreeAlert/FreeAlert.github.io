@@ -817,25 +817,30 @@ ol.type li a.active {
     width: 30px;
     background-color: #fff;
 }
-#udacity-create {
+#google-sleep {
     background-color:#fbfbfb;
 }
-#achievement-hunter {
-    background-color:#fbfbfb;
+
+#udacity-create {
+    background-color:#ffffff;
 }
 #xbox-club{
-    background-color:#fff;
+    background-color:#fbfbfb;
+}
+
+#achievement-hunter {
+    background-color:#ffffff;
 }
 
 #xboxprojects {
-    background-color:#Fff;
+    background-color:#fbfbfb;
 }
 
 #pg {
-    background-color:#fbfbfb;
+    background-color:#ffffff;
 }
 #dreamseeds{
-    background-color:#fff;
+    background-color:#fbfbfb;
 }
 .project {
     padding: 100px 0 100px;
