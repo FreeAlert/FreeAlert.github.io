@@ -27,6 +27,15 @@
     font-weight: 500;
 	font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.section-title h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 0px 0px 0px 0px;
+    color: #222;
+    text-transform: uppercase;
+	font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .p-b-30{
     padding-bottom: 30px;
 }
