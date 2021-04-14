@@ -1221,6 +1221,7 @@ button.submit:hover,
     background-color: #131313;
     border: 1px solid #131313;
     color: #fff;
+    cursor:pointer;
 }
 /* 14. Footer
 -------------------------------------------------*/
