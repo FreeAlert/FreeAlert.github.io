@@ -1396,7 +1396,7 @@ Responsive Media Querries
 
 	.navbar-transparent .nav li > a,
 	.navbar-transparent .navbar-brand {
-		color: #fff;
+		color: #000;
 	}
 
 	.navbar-transparent .dropdown-menu > li > a {
