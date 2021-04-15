@@ -212,12 +212,12 @@ ol {
 -------------------------------------------------*/
 
 .section-title.center {
-    padding: 30px 0;
+    padding: 10px 0;
     text-align: center;
 }
 .section-title h2,
 .section-title.center h2 {
-    font-weight: 300;
+    font-weight: 400;
     color: #030303;
     font-size: 26px;
     letter-spacing: 2px;
@@ -663,7 +663,7 @@ ol.type li a.active {
     padding: 100px 0 20px;
 }
 .section-title.center {
-    padding: 30px 0;
+    padding: 20px 0 20px 0;
     text-align: center;
 }
 .section-title h2,
