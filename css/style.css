@@ -820,22 +820,19 @@ ol.type li a.active {
     background-color:#fbfbfb;
 }
 
-#udacity-create {
+#projectssnapshots{
     background-color:#fbfbfb;
 }
 #xbox-club{
-    background-color:#ffffff;
-}
-
-#achievement-hunter {
     background-color:#fbfbfb;
 }
 
-#projectssnapshots{
+#achievement-hunter {
     background-color:#ffffff;
 }
 
-#pg {
+
+#scroll {
     background-color:#ffffff;
 }
 
@@ -862,6 +859,12 @@ ol.type li a.active {
 }
 .project  .skills {
     margin-top: 10px;
+}
+
+.space{
+  margin-top: 100px;
+  margin-bottom: 80px;
+
 }
 /* 10. Section Testimonials
 -------------------------------------------------*/
